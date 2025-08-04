@@ -1,3 +1,4 @@
 # Grid Binning Safety Map
 This project uses grid binning to split up the map of Norfolk, VA, assining a safety score to each grid based on the average of the sum of crash severities (fatal, nonvisible, visible, property damage) in that grid. Then when a route is created, it checks the average score of each longitude and latitude on that route. Routes can be scored between 1-5. If there is not enough data to calculate a score for that route, that will be output.
+#
 ![Example Image](mapEx.png)
