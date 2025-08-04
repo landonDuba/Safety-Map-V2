@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Route Safety Map</title>
+    <link rel="stylesheet" href="map.css">
+  </head>
+
+  <body>
+    <div id="container">
+        <div id="controls">
+            <input id="start" type="text" placeholder="Enter Start" />
+            <input id="end" type="text" placeholder="Enter Destination" />
+            <button id="btn" onclick="calculateRoute()">Get Route</button>
+            <a id="re" href="/app.jsx">Back To Home</a>
+
+        </div>
+        <div id="map"></div>
+        <h3 id="info">The Safety Score of Your Route is: <span id="scoreSpot">______</span></h3>
+    </div>
+
+    <script src="map.js"></script>
+    <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQm_4TtQg2yP2RUwmgk9KPY9ZeZ6UFHc0&callback=initMap&libraries=places">
+    </script>
+  </body>
+</html>
